@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 class Program
 {
@@ -22,6 +22,6 @@ class Program
         int b = int.Parse(Console.ReadLine());
 
         int sum = a + b;
-        Console.WriteLine("The sum is: " +sum);
+        Console.WriteLine("The sum is: " + sum);
     }
 }
