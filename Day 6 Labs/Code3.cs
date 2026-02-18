@@ -5,46 +5,48 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        try
+        if (args.Length > 0)
         {
-            if (args.Length > 0)
+            switch (args[0])
             {
-                switch (args[0])
-                {
-                    case "IndexOutOfRangeException":
-                        int[] arr = new int[2];
-                        Console.WriteLine(arr[5]); // trigger
-                        break;
-
-                    case "DivideByZeroException":
-                        int a = 10;
-                        int b = 0;
-                        Console.WriteLine(a / b);
-                        break;
-
-                    case "FileNotFoundException":
-                        File.Open("nonexistent.txt", FileMode.Open);
-                        break;
-                }
+                case "IndexOutOfRangeException":
+                    try
+                    {
+                        int[] numbers = { 1, 2, 3 };
+                        Console.WriteLine(numbers[3]); // Accessing out of range index
+                    }
+                    catch (IndexOutOfRangeException ex)
+                    {
+                        Console.WriteLine("Index out of range error: " + ex.Message);
+                    }
+                    break;
+                case "DivideByZeroException":
+                    try
+                    {
+                        int zero = 0;
+                        Console.WriteLine(10 / zero);
+                    }
+                    catch (DivideByZeroException ex)
+                    {
+                        Console.WriteLine("Division by zero error: " + ex.Message);
+                    }
+                    break;
+                case "FileNotFoundException":
+                    try
+                    {
+                        File.ReadAllText("nonexistentfile.txt");
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        string message = ex.Message;
+                        if (message.Contains("nonexistentfile.txt"))
+                        {
+                            message = "Could not find file 'nonexistentfile.txt'.";
+                        }
+                        Console.WriteLine("File not found error: " + message);
+                    }
+                    break;
             }
-        }
-        catch (IndexOutOfRangeException)
-        {
-            Console.WriteLine(
-                "Index out of range error: Index was outside the bounds of the array."
-            );
-        }
-        catch (DivideByZeroException)
-        {
-            Console.WriteLine("Divide by zero exception: Caught");
-        }
-        catch (FileNotFoundException)
-        {
-            Console.WriteLine("FileNotFoundException Caught");
-        }
-        catch (Exception)
-        {
-            Console.WriteLine("Exception Caught");
         }
     }
 }
