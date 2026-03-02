@@ -1,0 +1,37 @@
+_________________Question 1______________________
+
+// write your solution here
+function checkOddEven(number) {
+  if (number % 2 === 0) {
+    console.log(number + " is even.");
+  } else {
+    console.log(number + " is odd.");
+  }
+}
+
+checkOddEven(5);
+checkOddEven(10);
+checkOddEven(7);
+checkOddEven(2);
+
+_________________Question 2______________________
+
+
+input_array = getProgramInputs();
+
+var character = input_array[0];
+var count = Number(input_array[1]);
+
+function repeatCharacter(character, count) {
+    // Add your code below this line
+     let result = "";
+
+  for (let i = 0; i < count; i++) {
+    result += character;
+  }
+
+  return result;
+}
+
+var output = repeatCharacter(character, count);
+console.log(output);
