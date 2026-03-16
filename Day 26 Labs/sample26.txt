@@ -1,0 +1,31 @@
+CaseID	CreatedDate	Priority	Status	SLA_DueDate	ResolvedDate	Agent
+1001	01-01-2026	High	Open	03-01-2026		John
+1002	02-01-2026	Medium	Resolved	05-01-2026	04-01-2026	Maria
+1003	03-01-2026	Low	Resolved	06-01-2026	05-01-2026	David
+1004	04-01-2026	High	Escalated	06-01-2026		Sarah
+1005	05-01-2026	Medium	Resolved	08-01-2026	07-01-2026	John
+1006	06-01-2026	High	In Progress	09-01-2026		Maria
+1007	07-01-2026	Low	Resolved	10-01-2026	09-01-2026	David
+1008	08-01-2026	High	Resolved	10-01-2026	11-01-2026	Sarah
+1009	09-01-2026	Medium	Resolved	12-01-2026	11-01-2026	John
+1010	10-01-2026	High	Escalated	12-01-2026		Maria
+1011	11-01-2026	Low	Resolved	14-01-2026	13-01-2026	David
+1012	12-01-2026	Medium	Resolved	15-01-2026	14-01-2026	Sarah
+1013	13-01-2026	High	Resolved	16-01-2026	15-01-2026	John
+1014	14-01-2026	Medium	In Progress	17-01-2026		Maria
+1015	15-01-2026	Low	Resolved	18-01-2026	17-01-2026	David
+1016	16-01-2026	High	Resolved	19-01-2026	18-01-2026	Sarah
+1017	17-01-2026	Medium	Resolved	20-01-2026	19-01-2026	John
+1018	18-01-2026	High	Escalated	20-01-2026		Maria
+1019	19-01-2026	Low	Resolved	22-01-2026	21-01-2026	David
+1020	20-01-2026	High	Resolved	22-01-2026	23-01-2026	Sarah
+1021	21-01-2026	Medium	Resolved	24-01-2026	23-01-2026	John
+1022	22-01-2026	High	In Progress	25-01-2026		Maria
+1023	23-01-2026	Low	Resolved	26-01-2026	25-01-2026	David
+1024	24-01-2026	Medium	Resolved	27-01-2026	26-01-2026	Sarah
+1025	25-01-2026	High	Escalated	27-01-2026		John
+1026	26-01-2026	Medium	Resolved	29-01-2026	28-01-2026	Maria
+1027	27-01-2026	Low	Resolved	30-01-2026	29-01-2026	David
+1028	28-01-2026	High	Resolved	31-01-2026	30-01-2026	Sarah
+1029	29-01-2026	Medium	In Progress	01-02-2026		John
+1030	30-01-2026	High	Escalated	02-02-2026		Maria
